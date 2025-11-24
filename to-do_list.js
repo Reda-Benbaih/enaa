@@ -103,7 +103,7 @@ for(;;){
                 0. Quitter `)
     let number = parseInt(prompt("enter a number : "))
     switch(number){
-        case 0 :break;
+        case 0 :Process.exit();
         case 1 : showList() 
             break;
         case 2 : addTask()
@@ -121,5 +121,4 @@ for(;;){
         case 8 : showNotDoneTask()
             break;   
     }
-     
 }
