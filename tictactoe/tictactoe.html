@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="En">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/myhtml/tictactoe/tictactoe_style.css">
+</head>
+<body>
+    <!-- menu -->
+    <div id="menu" >
+        <h1 class="menu_title">Tic Tac Toe Project.</h1>
+        <button class="menu_button" onclick="start_game()">Play</button>
+    </div>
+    <!-- game -->
+    <div id="game" class="hidden">
+        <h2 class="game_title">Tic Tac Toe</h2>
+        <div class="turn_display" id="turn">turn </div>
+            <div class="board">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+        <div class="history_display" id="history">history</div>
+        <button class="menu_button" onclick="back_menu()">Back to Menu</button>
+    </div>
+    
+
+<script src="/myhtml/tictactoe/tictactoe_code.js" defer></script>
+</body>
+</html>
