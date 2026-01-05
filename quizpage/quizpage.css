@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.menu_picture{
+    position: relative;
+    height: 100dvh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+.menu_picture::before{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 100dvh;
+    width: 100%;
+    background-image: url(/myhtml/quizpage/images/HPwc4GpF-Hodgkinson_HERO.avif);
+    filter: brightness(0.4);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.menu_title{
+    background: linear-gradient(#5904BA,#AE05F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 500%;
+    z-index: 1;
+}
+.menu_button{
+    background: linear-gradient(#D1D100,#F7FF26);
+    z-index: 1;
+    border: none;
+    border-radius: 20px;
+    font-size: 200%;
+    padding: 5px;
+}
+.menu_button:hover{
+    background: #ABB00F;
+    z-index: 1;
+}
+.hidden{
+    display: none;
+}
+.category_title{
+    background: linear-gradient(#5904BA,#AE05F6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 500%;
+    z-index: 1;
+}
+.board {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    z-index: 1;
+    width: 60%;
+    height: 40%;
+}
+.choice{
+    background: linear-gradient(#D1D100,#F7FF26);
+    font-size: larger;
+    border-radius: 10px;
+    border: none;
+}
+.choice:hover{
+    background: linear-gradient(#787802,#F7FF26);
+    font-size: larger;
+    border-radius: 10px;
+    border: none;
+}
+.paper{
+    background-color: rgb(254, 255, 218);
+    width: 80%;
+    height: 70%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    gap: 2%;
+}
+.progress_bar_countainer{
+    z-index: 3;
+    width: 100%;
+    height: 15px;
+    background-color: #cecece;
+    border-radius: 10px;
+}
+.progress_bar{
+    height: 100%;
+    border-radius: 10px;
+}
+.question_counter_countainer{
+    flex-direction: column;
+    display: flex;
+    
+    color: red;
+    font-size: 200%;
+}
+.question_countainer{
+    flex-direction: column;
+    display: flex;
+    color: #5904BA;
+    
+    font-size: 150%;
+}
+.timer_countainer{
+    width: 100%;
+    height: 7px;
+    border-radius: 10px;
+}
+.timer{
+    height: 100%;
+    animation: timer_animation 20s reverse;
+    animation-timing-function: linear;
+    background-color: #5904BA;
+    width: 100%;
+    border-radius: 10px;
+}
+.answer_countainer{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 70%;
+    gap: 10px;
+    border: none;
+    
+}
+.answer{
+    background: linear-gradient(#5904BA,#8a02c4);
+    border: none;
+    margin: 0% 30%;
+    border-radius: 10px;
+    color: #F7FF26;
+}
+.quizpage_button{
+    z-index: 2;
+}
+.score{
+    font-size: 400%;
+    color: #5904BA;
+}
+.papera{
+    background-color: rgb(254, 255, 218);
+    width: 80%;
+    height: 70%;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    gap: 2%;
+}
+@keyframes timer_animation{
+    100% {width: 100%;}
+    0% {width: 0%;}
+}

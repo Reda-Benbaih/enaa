@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/myhtml/quizpage/quizpage.css">
+</head>
+<body>
+    <div id="menu">
+        <div class="menu_picture">
+            <div class="menu_title">Quiz Time !</div>
+            <button class="menu_button" onclick="to_categories()">play</button>
+        </div>
+    </div>
+    <div id="categories" class="hidden">
+        <div class="menu_picture">
+            <div class="category_title">Choose a Category !</div>
+            <div class="board">
+                <button class="choice" onclick="to_quiz(this)"></button>
+                <button class="choice" onclick="to_quiz(this)"></button>
+                <button class="choice" onclick="to_quiz(this)"></button>
+                <button class="choice" onclick="to_quiz(this)"></button>
+            </div>
+        </div>
+    </div>
+    <div id="quizpage" class="hidden">
+        <div class="menu_picture">
+            <div class="paper">
+                <div class="progress_bar_countainer">
+                    <div class="progress_bar"></div>                    
+                </div>
+                <div class="question_counter_countainer">
+                    <div class="question_counter"></div>
+                </div>
+                <div class="question_countainer">
+                    <div class="question"></div>
+                </div>
+                <div class="timer_countainer">
+                    <div class="timer"></div>
+                </div>
+                <div class="answer_countainer">
+                    <button class="answer"></button>
+                    <button class="answer"></button>
+                    <button class="answer"></button>
+                    <button class="answer"></button>
+                </div>
+                <button id="next" class="quizpage_button hidden" onclick="next_button()" >suivant</button>
+            </div>           
+        </div>
+    </div>
+    <div id="score_page" class="hidden">
+        <div class="menu_picture">
+            <div class="papera">
+                <div class="score"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/myhtml/quizpage/quizpage.js"></script>
+</body>
+</html>
